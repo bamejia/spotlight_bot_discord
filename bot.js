@@ -64,7 +64,6 @@ var cheers = [
     "You're great!",
     "It's not a party without you!",
     " :heart: ",
-    " :eggplant: ",
     "Dream on!",
     "You can do it!",
     " :smile: ",
@@ -503,6 +502,7 @@ bot.on('message', function m (user, userID, channelID, message, evt){
 
             //see who's in queue
         		case 'queue':
+            case 'q':
             case 'que':
 
                 var cap;    //make it easier for sending messages
@@ -624,37 +624,6 @@ bot.on('message', function m (user, userID, channelID, message, evt){
                 break;
             //case clear
 
-            case 'league':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'League\'s a terrible game!' + '\n'
-                });//bot.sendMessage
-                return;
-            //case league
-
-            case 'jesh':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'jesh is a great admin!' + '\n'
-                });//bot.sendMessage
-                return;
-            //case jesh
-
-            case 'cinnabun$':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'cinnabun$ comes up with great server names!' + '\n'
-                });//bot.sendMessage
-                return;
-            //case cinnabun$
-
-            case 'bamxmejia':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'bamxmejia posts his passwords in public!' + '\n'
-                });//bot.sendMessage
-                return;
-            //case bamxmejia
 
             case 'cheer':
             case 'cheerup':
